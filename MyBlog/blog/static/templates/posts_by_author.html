@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>Posts by {{ author.name }}</h2>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.title }} - {{ post.pub_date }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

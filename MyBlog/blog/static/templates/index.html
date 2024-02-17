@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    {% load static %}
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Blog!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'post_list' %}">All Posts</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>This is the main content of the home page.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
